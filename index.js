@@ -3,6 +3,7 @@ const db = require('./db/conn');
 const app = express();
 const port = 3000;
 const methodOverride = require('method-override');
+require('dotenv').config();
 
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
